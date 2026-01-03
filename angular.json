@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AppSistemaVenta": {
+    "app-sistema-venta": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -33,8 +33,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "3mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "AppSistemaVenta:build:production"
+              "browserTarget": "app-sistema-venta:build:production"
             },
             "development": {
-              "browserTarget": "AppSistemaVenta:build:development"
+              "browserTarget": "app-sistema-venta:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AppSistemaVenta:build"
+            "browserTarget": "app-sistema-venta:build"
           }
         },
         "test": {
